@@ -8,8 +8,8 @@ Repo about preparing for CS interview
 
 ## [DataBase](./DataBase)
 
-## [DS/Algo](./DS//Algo)
+## [DS/Algo](./DS_Algo)
 
 ## [Network](./Network)
 
-## [ML/DL](./ML/DL)
+## [ML/DL](./ML_DL)
