@@ -14,6 +14,10 @@ Repo about preparing for CS interview
 
 ## [ML/DL](./ML_DL)
 
+## [Language](./Language)
+
+## [SWEngineering](./SWEngineering)
+
 
 ## 👪 Contributor
 
