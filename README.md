@@ -23,7 +23,7 @@ Repo about preparing for CS interview
   - 특징
   - 삽입
   - 삭제
-- Hash Table
+- [Hash Table](./DS_Algo/Hash_Table)
   - Hash Function
   - Resolve Collision
     - Open Addressing
