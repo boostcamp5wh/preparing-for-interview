@@ -10,7 +10,7 @@ Repo about preparing for CS interview
 
 ## [DS/Algo](./DS_Algo)
 
-- [Array vs Linked List](./Array_vs_Linked List)
+- [Array vs Linked List](./Array_vs_Linked_List)
 - [Stack and Queue](./Stack_and_Queue)
 - [Tree](./Tree)
   - Binary Tree
