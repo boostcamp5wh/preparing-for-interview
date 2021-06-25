@@ -10,15 +10,15 @@ Repo about preparing for CS interview
 
 ## [DS/Algo](./DS_Algo)
 
-- Array vs Linked List
-- Stack and Queue
-- Tree
+- [Array vs Linked List](./Array_vs_Linked List)
+- [Stack and Queue](./Stack_and_Queue)
+- [Tree](./Tree)
   - Binary Tree
   - Full Binary Tree
   - Complete Binary Tree
   - BST (Binary Search Tree)
-- Binary Heap
-- Red-Black Tree
+- [Binary Heap](./Binary_Heap)
+- [Red-Black Tree](./Red-Black_Tree)
   - 정의
   - 특징
   - 삽입
@@ -29,7 +29,7 @@ Repo about preparing for CS interview
     - Open Addressing
     - Separate Chaining
   - Resize
-- Graph
+- [Graph](./Graph)
   - Graph 용어 정리
   - Graph 구현
   - Graph 탐색
