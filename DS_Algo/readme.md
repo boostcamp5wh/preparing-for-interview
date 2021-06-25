@@ -1,1 +1,6 @@
-1. [Hash_Table](./Hash_Table)
+1. [Array vs Linked List](./Array_vs_Linked_List)
+2. [Binary Heap](./Binary_Heap)
+3. [Graph](./Graph)
+4. [Hash Table](./Hash_Table)
+5. [Stack and Queue](./Stack_and_Queue)
+6. [Tree](./Tree)
