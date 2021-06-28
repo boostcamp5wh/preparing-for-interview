@@ -9,15 +9,15 @@
 
 임의의 길이로 고정을 해놓고 쓰기 때문에 중복되는 경우가 있다. 크게 두 가지 해결방안이 있는데
 
-1. 빈 주소에 넣기(open addressing)
+1. 빈 주소에 넣기(open addressing) 
+2. 같은 주소에서 linked list 로 넣기(seperate chaining)
 
   1번의 경우 다시 3개로 나뉘는데
   
   1. 선형탐색(Linear Probing)(충돌되면 빈 곳 나올 때 까지 다음 버킷에 넣기)
   2. 제곱탐색(Quadratic Probing)(충돌되면 빈 곳 나올 때 까지 충돌위치의 n^2 다음의 버킷에 넣기)
   3. 이중해시(Double Hashing)(충돌된 버킷값을 다시 입력으로 넣어서 출력된 값을 버킷으로)
- 
-2. 같은 주소에서 linked list 로 넣기(seperate chaining)
+
 
 
 장단점이 있다.
