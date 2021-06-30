@@ -1,3 +1,5 @@
+# 이론
+
 ## OSI 7계층이 어떤 것이 있나?
 * 7 응용
     * UI 담당계층, 네트워크 응용 프로그램
@@ -40,12 +42,7 @@
     * OSI 7계층에서 1,2 를 합친 것. H/W Interface 에 관한 파트이므로 묶었음.
 *  OSI는 가이드로서, TCP/IP는 계속 실무의 표준으로 쓰임.
 
-
-## TCP UDP 란? 차이는?
-
-## STP FTP UTP 차이?
-
-## TCP 3-handshake, TCP 4-handshake 에 대해 설명
+## TCP 3-handshake, TCP 4-handshake 에 대해 설명과 왜 shaking 차이가 나는지 설명하시오.
 
 * 3-handshake : TCP 세션 맺을 때 사용
     * Client : SYN
@@ -56,13 +53,49 @@
     * Server : ACK(and close-wait)
     * Server : FIN
     * Client : ACK
+* 둘 간의 차이는 ~~
+
+## 초기 Sequence Number인 ISN을 0부터 시작하지 않고 난수를 생성해서 설정하는 이유가 무엇인가요?
+* Connection을 맺을 때 사용하는 포트(port)는 유한 범위 내에서 사용하고 시간이 지남에 따라 재사용된다. 따라서 두 통신 호스트가 과거에 사용된 포트 번호 쌍을 사용하는 가능성이 존재한다. 서버 측에서는 패킷의 SYN을 보고 패킷을 구분하게 되는데 난수가 아닌 순차적인 number가 전송된다면 이전의 connection으로부터 오는 패킷으로 인식할 수 있다. 이러한 문제가 발생할 가능성을 줄이기 위해서 난수로 ISN을 설정한다.
+
+## Data Encapsulation 에 대해 설명하시오
 
 
-## 0.0.0.0을 차단하려고 한다. 어떻게 하면 차단이 될까?
 
-## 쿠키와 세션에 대해 설명
+# Network Engineering
 
-## GET과 POST방식의 차이점
+## 여러 network topology 에 대해 설명하시오
+
+
+## TCP UDP 란? 차이는? 둘 간의 헤더도 비교하시오
+
+## Subnetting, Subnet mask, Supernetting, Supernet Mask 에 대해 설명하시오
+
+## 라우터와 스위치, 허브의 차이를 설명해주세요
+
+## Straight Through, cross, rollover cable 에 대해 설명하시오 
+
+## VLAN 과 tagging에 대해 설명하시오
+
+## Gateway 란?
+
+# Protocol
+
+## DHCP 에 대해 설명하시오
+
+## SMTP 에 대해 설명하시오
+
+## DNS 에 대해 설명하시오
+
+## Ethernet 에 대해 설명하시오
+
+## IPv4와 IPv6 차이를 설명하시오
+
+## MAC Address 에 대해 설명하시오
+
+## routing protocol에 대해 설명하시오
+
+# Web
 
 ## HTTP가 무엇인지 설명하시오
 
@@ -70,5 +103,38 @@
 
 ## HTTPS 와 SSL/TLS에 대해 설명하시오
 
+## HTTP 요청/응답 헤더의 구조를 설명하시오
 
+## HTTP GET과 POST 메서드를 비교/설명하시오
 
+## CORS가 무엇인가요?
+
+## 쿠키와 세션에 대해 설명하시오
+
+## REST 와 RESTFUL 에 대해 설명하시오
+
+## STATEFUL 과 STATELESS 에 대해 설명하시오
+
+## Server 와 Client 에 대해 설명하시오
+
+# Network Programming
+
+## Socket 에 대해 설명하시오, 언어로 구현해보시오
+
+## Socket.io와 WebSocket의 차이를 설명하시오
+
+##
+
+# 홈 네트워킹
+
+## 0.0.0.0을 차단하려고 한다. 어떻게 하면 차단이 될까?
+
+## 브라우저로 구글(google.com)에 접속시 페이지를 띄우기 까지 과정을 자세히 설명하시오
+
+## Gateway 란?
+
+# 기타
+
+## STP FTP UTP 차이?
+
+## delay, timing(jitter), throughput 차이를 설명하시오
