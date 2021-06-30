@@ -1,4 +1,4 @@
-OSI 7계층이 어떤 것이 있나?
+## OSI 7계층이 어떤 것이 있나?
 * 7 응용
     * UI 담당계층, 네트워크 응용 프로그램
     * Device : L7 Switch
@@ -29,7 +29,7 @@ OSI 7계층이 어떤 것이 있나?
     * Device : Hub, Repeater
     * PDU : bit
 
-TCP/IP 4계층을 설명하고 OSI 7계층의 차이는?
+## TCP/IP 4계층을 설명하고 OSI 7계층의 차이는?
 * 4 응용
     * OSI 7계층에서 7,6,5 를 합친 것. network 관점에서는 응용 프로그래머의 역할이므로 묶었음.
 * 3 전송
@@ -41,11 +41,11 @@ TCP/IP 4계층을 설명하고 OSI 7계층의 차이는?
 *  OSI는 가이드로서, TCP/IP는 계속 실무의 표준으로 쓰임.
 
 
-TCP UDP 란? 차이는?
+## TCP UDP 란? 차이는?
 
-STP FTP UTP 차이?
+## STP FTP UTP 차이?
 
-TCP 3-handshake, TCP 4-handshake 에 대해 설명
+## TCP 3-handshake, TCP 4-handshake 에 대해 설명
 
 * 3-handshake : TCP 세션 맺을 때 사용
     * Client : SYN
@@ -58,10 +58,10 @@ TCP 3-handshake, TCP 4-handshake 에 대해 설명
     * Client : ACK
 
 
-0.0.0.0을 차단하려고 한다. 어떻게 하면 차단이 될까?
+## 0.0.0.0을 차단하려고 한다. 어떻게 하면 차단이 될까?
 
-쿠키와 세션에 대해 설명
+## 쿠키와 세션에 대해 설명
 
-GET과 POST방식의 차이점
+## GET과 POST방식의 차이점
 
-HTTP가 무엇인지 설명하시오
+## HTTP가 무엇인지 설명하시오
