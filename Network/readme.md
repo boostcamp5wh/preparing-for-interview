@@ -60,12 +60,15 @@
 
 ### Data Encapsulation 에 대해 설명하시오
 
+### 오류 제어 방식에 대해 설명하시오
 
+* 에러검출(CRC, 해밍, BCH), 에러정정(블록코딩(해밍, BCH, LDPC), 비블록(터보, 컨볼루션)), 재전송(FEC, ARQ)
+* 재전송(Stop & Wait, Go back N, Selective, Adaptive ARC)
+* FEC : 오류정정, CRC : 오류검출, ARQ : 오류 재전송, Hybrid-ARQ : FEC+ARQ 섞은 것
 
 # Network Engineering
 
 ### 여러 network topology 에 대해 설명하시오
-
 
 ### TCP UDP 란? 차이는? 둘 간의 헤더도 비교하시오
 
