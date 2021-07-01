@@ -114,6 +114,8 @@
 
 ### 쿠키와 세션에 대해 설명하시오
 
+## Web cache 에 대해 설명하시오
+
 ### REST 와 RESTFUL 에 대해 설명하시오
 
 ### STATEFUL 과 STATELESS 에 대해 설명하시오
