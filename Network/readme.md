@@ -133,7 +133,20 @@
 ### 0.0.0.0을 차단하려고 한다. 어떻게 하면 차단이 될까?
 
 ### 브라우저로 구글(google.com)에 접속시 페이지를 띄우기 까지 과정을 자세히 설명하시오
-
+* local host → local DNS(+ARP) → 루트 DNS 서버(+ARP) → .com DNS 서버 → test.com DNS 서버 순서대로 www.test.com에 해당하는 IP주소 요청하고, 있다면 그 서버에서 바로 주소를 받음
+* 
+* TCP 통신을 통해 소켓 개방
+* HTTP 프로토콜로 요청
+* 라우팅 중 프록시 서버를 만나면 웹 캐시에 저장된 정보를 response 받음
+* 프록시 서버를 만나지 못해 www.test.com를 서빙하는 서버까지 가면 요청에 맞는 데이터를 response로 전송함
+* 브라우저의 loader가 해당 response를 다운로드 할지 말지 결정
+* 브라우저의 웹 엔진이 다운로드한 .html 파일을 파싱해 DOM 트리를 결정
+* .html 파싱중 script 태그를 만나면 파싱을 중단함
+* script 태그에 있는 자원을 다운로드해 처리가 완료되면 다시 파싱 함
+* CSS parser가 .css 파일을 파싱해 스타일 규칙을 DOM 트리에 추가하고 렌더 트리를 만듦
+* 렌더트리를 기반으로 브라우저의 크기에 따라 각 노드들의 크기를 결정
+* 렌더링 엔진이 배치를 시작(페인팅)
+* https://parksb.github.io/article/36.html
 ### Gateway 란?
 
 # 기타
