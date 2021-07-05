@@ -132,7 +132,47 @@
 
 # 홈 네트워킹
 
-### 0.0.0.0을 차단하려고 한다. 어떻게 하면 차단이 될까?
+### 123.123.123.123 을 차단하려고 한다. 어떻게 하면 차단이 될까?
+* Linux 기준
+    1. route 명령어로 차단하기
+        route add -host 123.123.123.123 reject
+        기본적으로 interface를 통해 gateway로 나가던 routing이 사라져
+        해당 host -> IP 로 나가는 연결이 막힌다.
+    2. 방화벽으로 차단하기
+        iptables 는 CentOS 6에서 쓰던 방화벽
+        iptables -A INPUT -s 123.123.123.123. -j DROP
+        -A INPUT = A(추가)하라. INPUT(들어오는 패킷)에 대해
+        -s IP = s(출발지주소)가 IP면
+        -j DROP = jump 하라. DROP(버리기)로
+* Network Device 기준
+    1. Standard ACL
+        Router> enable
+        Router# confiture terminal
+        Router(config)# access-list 1 deny 123.123.123.123 0.0.0.0
+        Router(config)# access-list 1 permit any
+        wildcard mask 이므로 subnet 과는 1,0이 반대임에 주의
+    2. Extended ACL
+        Router(config)# access-list 101 deny ip 127.0.0.0 0.0.0.255 123.123.123.123 0.0.0.0
+        Router(config)# access-list 101 permit any
+        Router(config)# access-list 110 deny tcp 127.0.0.0 0.0.0.255 123.123.123.123 0.0.0.0 eq 80
+        Router(config)# access-list 101 permit any
+        1. Interface 적용
+            Router(config)# interface serial 0/0
+            Router(config-if)# ip access-group 1 in
+            inbound 에 적용해야함에 주의
+        3. Routing 적용
+            Router(config)# router rip
+            Router(confing-router)# distribute-list 1 in serial 0/0
+            distribute list 는 주로 outbound 에 적용한다.(송신측에서 설정한다.)
+            routing AD 를 줄여 대역폭과 리소스 낭비를 막는다.
+            Router(config)# router rip
+            Router(confing-router)# offset-list 1 in 16 serial 0/0
+            offset list 는 주로 inbound 에 적용한다. (수신측에서 설정한다.)
+            차단이 아닌 hop 증가임에 주의
+        5. vty 적용
+            Router(config)# line vty 0 4
+            Router(config-line)# access-class 1 in
+            Router에 접근하는 telnet 접근 차단임에 주의
 
 ### 브라우저로 구글(google.com)에 접속시 페이지를 띄우기 까지 과정을 자세히 설명하시오
 * local host → local DNS(+ARP) → 루트 DNS 서버(+ARP) → .com DNS 서버 → test.com DNS 서버 순서대로 www.test.com에 해당하는 IP주소 요청하고, 있다면 그 서버에서 바로 주소를 받음
@@ -154,5 +194,14 @@
 # 기타
 
 ### STP FTP UTP 차이?
-
+* STP
+    * Spanning Tree Protocol (Switch topology configuration을 위한 프로토콜)
+    * Shielded Twisted Pair(LAN Cable 의 한 종류 UTP 보다 잡음에 강해 신호전송길이가 긺, 전체 은박 + pair 끼리 은박)
+* FTP
+    * File Transfer Protocol (7계층 파일 전송을 위한 프로토콜)
+    * Foiled Twisted Pair (LAN Cable 의 한 종류로 STP 보단 약함, 전체 은박)
+* UTP
+    * Unshielded Twisted Pair (기본 LAN Cable)
+* 보통 cable 로서 STP, FTP 를 볼 일이 없기 때문에 연관없는 프로토콜들이다.
+(UTP는 프로토콜이 아니므로 제외)
 ### delay, timing(jitter), throughput 차이를 설명하시오
