@@ -31,5 +31,5 @@
 17. Few-Shot Learning이란?
 18. Collaborative filtering이란?
 19. Transformer란?
-20. Attention이란?      
+20. Attention이란?
 ~~21. Gradient Descent~~
