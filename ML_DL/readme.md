@@ -32,4 +32,4 @@
 18. Collaborative filtering이란?
 19. Transformer란?
 20. Attention이란?
-~~21. Gradient Descent~~
+21. ~~Gradient Descent~~
