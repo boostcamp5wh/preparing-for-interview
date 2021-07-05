@@ -1,5 +1,6 @@
 ## Federated Learning이란?
 - 모델 학습을 여러 대의 edge device에 나뉘서 하는 방법
+
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Federated_learning_process_central_case.png/880px-Federated_learning_process_central_case.png" width="600">
 - 데이터가 edge device를 나갈 필요 없음 -> 학습된 파라미터만 공유함
 - edge device에 있는 데이터는 학습할 때만 사용되고 서버에 보낼 필요가 없어서 보안이 좋음
