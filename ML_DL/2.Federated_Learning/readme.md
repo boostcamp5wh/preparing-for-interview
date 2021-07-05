@@ -2,6 +2,13 @@
 - 모델 학습을 여러 대의 edge device에 나뉘서 하는 방법
 
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Federated_learning_process_central_case.png/880px-Federated_learning_process_central_case.png" width="600">
+- distributed learning이랑 차이
+  - distributed learning의 목표는 여러 대의 gpu로 빨리 학습하는것
+  - federated learning의 목표는 heterogeneous 데이터셋들에서 학습하는 것
+  - distributed learning은 분산된 데이터의 분포가 비슷함
+  - federated learning은 데이터 분포에 대한 제약 없음
+
+
 - 데이터가 edge device를 나갈 필요 없음 -> 학습된 파라미터만 공유함
 - edge device에 있는 데이터는 학습할 때만 사용되고 서버에 보낼 필요가 없어서 보안이 좋음
 - 보안을 위해 암호화랑 학습된 파라미터에서 특정 데이터 뽑을 수 없게 처리
