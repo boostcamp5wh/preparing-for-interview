@@ -1,3 +1,9 @@
+## 목차
+1. [Gradient Descent](./1.Gradient_Descent)
+2. [Federated Learning](./2.Federated_Learning)
+
+---
+## 질문 후보
 1. Cross Validation은 무엇이고 어떻게 해야하나요?
 2. 알고 있는 metric에 대해 설명해주세요(ex. RMSE, MAE, recall, precision …)
 3. 정규화를 왜 해야할까요? 정규화의 방법은 무엇이 있나요?
@@ -27,3 +33,4 @@
 18. Collaborative filtering이란?
 19. Transformer란?
 20. Attention이란?
+21. ~~Gradient Descent~~
