@@ -5,6 +5,8 @@
 5. [Stack and Queue](./Stack_and_Queue)
 6. [Tree](./Tree)
 
+> 각 정렬간 시간 복잡도 비교
+
 |Sort|Space Complexity|Average Time Complexity|Worst Time Complexity|
 |:---|:---|:---:|:---:|
 |Bubble sort|O(1)|O(n^2)|O(n^2)|
