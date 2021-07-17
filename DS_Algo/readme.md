@@ -6,7 +6,7 @@
 6. [Tree](./Tree)
 
 |Sort|Space Complexity|Average Time Complexity|Worst Time Complexity|
-|:---|:---|:---:|:---:|:---:|
+|:---|:---|:---:|:---:|
 |Bubble sort|O(1)|O(n^2)|O(n^2)|
 |Selection sort|O(1)|O(n^2)|O(n^2)|
 |Insertion sort|O(1)|O(n^2)|O(n^2)|
