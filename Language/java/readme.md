@@ -171,3 +171,5 @@ Strategy 인터페이스를 구성하고 이를 구현하는 StrategyA, Strategy
 인터페이스 분리 원칙(Interface Separation Principle, ISP): 클라이언트가 자신이 이용하지 않는 메서드에 의존하지 않아야 한다는 원칙입니다.
 의존 역전 원칙(Dependency Inversion Principle, DIP): 특정 소프트웨어 요소를 개발하면서 자신보다 변하기 쉬운 것에 의존하지 말라는 원칙입니다. 즉, 추상적인 것에 의존하라는 원칙입니다.
 
+CheckedException vs UncheckedException
+https://madplay.github.io/post/java-checked-unchecked-exceptions
